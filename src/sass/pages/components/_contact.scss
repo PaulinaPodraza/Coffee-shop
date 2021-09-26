@@ -1,0 +1,62 @@
+#pages {
+  > * {
+    display: none;
+  }
+
+  > .active {
+    display: block;
+  }
+}
+
+.contact-widget {
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $third-colour;
+    font-size: 30px;
+    font-weight: $font-bold;
+    margin: 20px 0;
+    text-align: center;
+
+    .field-message {
+      margin: 30px;
+    }
+
+    input {
+      border: 5px solid $third-colour;
+      min-width: 575px;
+      max-width: 575px;
+      min-height: 72px;
+      max-height: 72px;
+    }
+
+    textarea {
+      border: 5px solid $third-colour;
+      clear: left;
+      min-width: 575px;
+      max-width: 575px;
+      min-height: 150px;
+      max-height: 150px;
+      resize: none;
+    }
+
+    .submit-btn {
+      background-color: $second-colour;
+      color: $first-colour;
+      border: none;
+      width: 240px;
+      height: 80px;
+      margin: 40px 0;
+
+      &:hover {
+        transition-duration: 3s;
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        z-index: 0;
+      }
+    }
+  }
+}

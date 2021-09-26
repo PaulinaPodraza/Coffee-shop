@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,600&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <title>Coffee shop</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header-inner">
+        <h2>EL TIGRE</h2>
+        <p>VENEZUELA COFFEE BEANS</p>
+        <div class="main-nav nav-ul" id="nav-ul">
+          <a href="#home">HOME</a>
+          <a href="#products">PRODUCTS</a>
+          <a href="#contact">CONTACT</a>
+        </div>
+        <h1 class="page-title">HOME OF</h1>
+        <h1 class="page-title-two">ORIGINAL TASTES</h1>
+        <div class="navi" id="navi">
+          <h3 class="dis-text">DISCOVER</h3>
+          <i class="far fa-arrow-alt-circle-down"></i>
+        </div>
+      </div>
+    </header>
+
+    <div id="pages">
+      <section id="home">
+        <div class="home-wrapper container"></div>
+      </section>
+      <section id="products">
+        <div class="products-wrapper container"></div>
+      </section>
+      <section id="contact">
+        <div class="contact-wrapper container"></div>
+      </section>
+    </div>
+
+    <script id="template-home-widget" type="text/x-handlebars-template">
+      <div class="home-widget">
+        <img src="./images/about-us.jpg">
+        <h2>ABOUT US</h2>
+      </div>
+      <div class="description">
+        <p>Who are we? Just a bunch of friends with  a love for a good coffee and desire to create something new, something original. Our coffees reflect us – young, wild and free.  We are on the journey of new tastes...
+          <br><br>Join us!
+        </p>
+      </div>
+      </div>
+    </script>
+
+    <script id="template-products-widget" type="text/x-handlebars-template">
+    <div class="product-widget container">
+      <article class="box-right">
+        <div class="box-image">
+          {{{ images }}}
+        </div>
+        <div class="box-description">
+        <h3 class="name">{{{ no }}} {{{ name }}}</h3>
+        <div class="row description">
+          <span>{{{ description }}}</span>
+        </div>
+        <div class="row">
+          <div class="specification">
+            <p>ROASTING: <span>{{{ roasting }}}</span></p>
+            <p>INTENSITY: <span>{{{ intensity }}}</span></p>
+          </div>
+          <div>
+            {{{ most-popular }}}
+          </div>
+        </div>
+      </article>
+    </div>
+  </script>
+
+  <script id="template-contact-widget" type="text/x-handlebars-template">
+    <div class="contact-widget">
+      <form class="form" method="post" enctype="text/plain">
+        <div class="form-row">
+          <label for="filed-name">NAME</label><br>
+          <input type="text" name="name" required id="filed-name">
+        </div>
+        <div class="form-row">
+          <label for="filed-name">TITLE</label><br>
+          <input type="text" name="title" required id="filed-title" >
+        </div>
+        <div class="form-row">
+          <label for="field-message" class="field-message">MESSAGE</label>
+          <textarea name="message" required id="field-message"></textarea>
+        </div>
+        <div class="form-row">
+          <button type="submit" class="submit-btn">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+  </script>
+  <footer>
+    <p> © 2021 EL TIGRE inc.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+  <script src="js/app.js" type="module"></script>
+  </body>
+</html>
