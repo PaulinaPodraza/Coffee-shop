@@ -1,47 +1,66 @@
 @media (max-width: 1200px) {
-  .main-text h1 {
-    font-size: 70px;
+  .page-title, .page-title-two {
+    font-size: 50px;
+    letter-spacing: 3px;
   }
 
-  .who p {
+  .section-title {
+    font-size: 60px;
+  }
+
+  .description p {
     font-size: 40px;
+  }
+
+    .section-title {
+    font-size: 40px;
+    letter-spacing: 10px;
+  }
+
+  .section-title::after {
+    width: 300px;
+  }
+
+    .page-title, .page-title-two {
+      margin: auto 20%;
+  }
+
+  .page-title::after {
+    margin-bottom: 2px;
+    bottom: -7vw;
   }
 }
 
 @media (max-width: 783px) {
-  .main-text h1 {
-    font-size: 50px;
+  .page-title, .page-title-two {
+    font-size: 30px;
+  }
+
+  .page-title::after {
+    margin-bottom: 2px;
+    bottom: -9vw;
   }
 
   //button
-  .nav-ul {
+  .main-nav {
     display: none;
     width: 100%;
-    height: 40vh;
+    height: 20vh;
     flex-direction: column;
-    background-color: rgba(43, 41, 41, 0.785);
-    border-radius: 20px;
-    padding: 30px;
+    padding: 5px;
     margin: 0 20px;
-
-    li {
-      margin: 10px 0;
-
-      a {
-        font-size: 40px;
-        color: $first-colour;
-        filter: brightness(100%);
-
-        &:hover {
-          filter: brightness(50%);
-        }
-      }
-    }
-  }
-
-  .nav-ul.show {
     display: flex;
     justify-content: space-between;
+
+    a {
+      color: $first-colour;
+      filter: brightness(100%);
+      margin: 5px 0;
+
+      &:hover {
+        filter: brightness(50%);
+      }
+    }
   }
 
   .navi {
@@ -49,26 +68,65 @@
     display: block;
   }
 
-  .title h2 {
-    font-size: 50px;
+  .section-title {
+    font-size: 30px;
+    letter-spacing: 10px;
   }
 
-  .who p {
-    font-size: 28px;
+  .section-title::after {
+    width: 300px;
+  }
+
+  // .title-two {
+  //   font-size: 50px;
+  // }
+
+  .description p {
+    font-size: 18px;
     margin: 0;
+  }
+
+  #products {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box-right, .box-left{
+    flex: 0 0 auto;
+  }
+
+  h3 .name {
+    font-size: 20px;
+  }
+
+  .page-title, .page-title-two {
+      margin: auto 10%;
   }
 }
 
 @media (max-width: 400px) {
-  .main-text h1 {
-    font-size: 36px;
-  }
-
-  .title h2 {
+  .page-title, .page-title-two {
     font-size: 30px;
   }
 
-  .who p {
-    font-size: 18px;
+  .section-title {
+    font-size: 26px;
   }
+
+  // .title-two {
+  //   font-size: 30px;
+  // }
+
+  .description p {
+    font-size: 10px;
+  }
+
+  h3.name {
+    font-size: 15px;
+  }
+
+  .page-title, .page-title-two {
+    margin: auto 5%;
+  }
+
 }

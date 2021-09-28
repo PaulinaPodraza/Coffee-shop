@@ -80,3 +80,34 @@
 .nonactive {
   visibility: none;
 }
+
+#products {
+  margin: 100px;
+}
+
+.section-title {
+  font-weight: $font-bold;
+  font-size: 46px;
+  margin-bottom: 50px;
+  position: relative;
+  color: $second-colour;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 20px;
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  width: 500px;
+  height: 3px;
+  background: $second-colour;
+  display: flex;
+}
+
+.popular{
+  margin-left: 0;
+  display: flex;
+  justify-content: left;
+}

@@ -49,10 +49,8 @@
 
 .navi {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   justify-content: center;
-  display: flex;
-  margin-bottom: 20px;
   margin-top: 25%;
 }
 
@@ -60,16 +58,13 @@
   font-size: 30px;
   color: $first-colour;
   display: flex;
-  margin: auto 50% 0;
-  text-align: center;
-  position: absolute;
   margin-top: 50px;
+  justify-content: center;
 }
 
 .page-title, .page-title-two {
   color: $second-colour;
   font-size: 70px;
-  margin: 48px 0 0 0;
   font-family: $font-text;
   letter-spacing: 15px;
   margin: auto 20%;
@@ -77,15 +72,15 @@
 }
 
 .page-title-two{
-  padding-left: 120px;
+  padding-left: 8%;
 }
 
 .page-title::after {
   position: absolute;
   content: '';
-  bottom: -100px;
-  left: 50%;
-  width: 200px;
+  bottom: -8vw;
+  left: 32vw;
+  width: 15vw;
   height: 5px;
   transform: translateX(-80%);
   background: $second-colour;
@@ -94,4 +89,6 @@
 .dis-text {
   color: $first-colour;
   font-size: 18px;
+  display: flex;
+  justify-content: center;
 }
