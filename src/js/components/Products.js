@@ -15,10 +15,14 @@ class Products {
     const generatedHTML = templates.productsPage(thisProducts.data);
     /* create element using utils.createElementFromHTML */
     thisProducts.element = utils.createDOMFromHTML(generatedHTML);
+    thisProducts.products = utils.createDOMFromHTML(generatedHTML);
     /* find menu container */
     const menuContainer = document.querySelector(select.containerOf.menu);
+    const homeContainer = document.querySelector(select.containerOf.main);
+    const aboutUsElement = document.querySelector(select.containerOf.home);
     /* add element to menu */
     menuContainer.appendChild(thisProducts.element);
+    homeContainer.insertBefore(thisProducts.products, aboutUsElement);
   }
 }
 

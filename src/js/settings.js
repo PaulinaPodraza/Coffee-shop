@@ -6,6 +6,7 @@ export const select = {
   },
   containerOf: {
     menu: '#products',
+    main: '#home',
     pages: '#pages',
     home: '.home-wrapper',
     products: '.products-wrapper',
