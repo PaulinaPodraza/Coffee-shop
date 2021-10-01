@@ -15,9 +15,9 @@
     justify-content: center;
     align-items: center;
     color: $third-colour;
-    font-size: 30px;
+    font-size: 3vw;
     font-weight: $font-bold;
-    margin: 20px 0;
+    margin: 3vw 0;
     text-align: center;
 
     .field-message {
@@ -26,19 +26,15 @@
 
     input {
       border: 5px solid $third-colour;
-      width: 575px;
-      width: 575px;
-      height: 72px;
-      height: 72px;
+      width: 52vw;
+      height: 5vw;
     }
 
     textarea {
       border: 5px solid $third-colour;
       clear: left;
-      width: 575px;
-      width: 575px;
-      height: 150px;
-      height: 150px;
+      width: 52vw;
+      height: 12vw;
       resize: none;
     }
 
@@ -46,8 +42,8 @@
       background-color: $second-colour;
       color: $first-colour;
       border: none;
-      width: 240px;
-      height: 80px;
+      width: 20vw;
+      height: 8vw;
       margin: 40px 0;
 
       &:hover {
