@@ -36,8 +36,6 @@
       <section id="home">
         <h1 class="section-title">PRODUCTS</h1>
         <div class="products-wrapper container"></div>
-        <div class="products-wrapper container"></div>
-        <div class="products-wrapper container"></div>
         <div class="home-wrapper container">
         </div>
       </section>
@@ -53,14 +51,16 @@
 
     <script id="template-home-widget" type="text/x-handlebars-template">
       <div class="home-widget">
-        <img src="./images/about-us.jpg">
-        <h2>ABOUT US</h2>
+        <h2 class="section-title">ABOUT US</h2>
+              <div class="description">
+                <p class="description">Who are we? Just a bunch of friends with a love for a good coffee and desire to create
+                  something new, something original.<br><br>Our coffees reflect us – young, wild and free. We are on the journey of new
+                  tastes...
+                  <br><br><p class="join">Join us!</p>
+                </p>
+              </div>
       </div>
-      <div class="description">
-        <p>Who are we? Just a bunch of friends with  a love for a good coffee and desire to create something new, something original. Our coffees reflect us – young, wild and free.  We are on the journey of new tastes...
-          <br><br>Join us!
-        </p>
-      </div>
+
     </script>
 
     <script id="template-products-widget" type="text/x-handlebars-template">
@@ -89,6 +89,7 @@
 
   <script id="template-contact-widget" type="text/x-handlebars-template">
     <div class="contact-widget">
+      <h2 class="section-title">CONTACT US</h2>
       <form class="form" method="post" enctype="text/plain">
         <div class="form-row">
           <label for="filed-name">NAME</label><br>
