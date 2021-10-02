@@ -26,7 +26,7 @@ export const app = {
         // run thisApp.activePage with that id
         thisApp.activatePage(id);
         // change URL hash
-        window.location.hash = '#/' + 'id';
+        window.location.hash = '#/' + id;
       });
     }
   },
@@ -62,9 +62,11 @@ export const app = {
   },
   initNavi: function () {
     const navi = document.getElementById('navi');
-    const navUL = document.getElementById('nav-ul');
     navi.addEventListener('click', () => {
-      navUL.classList.toggle('show');
+      const header = document.querySelector('header');
+      const height = header.offsetHeight;
+      const prodPosiion = window.scrollTo(0, height);
+      console.log(prodPosiion);
     });
   },
   initData: function () {
