@@ -59,7 +59,12 @@
 
   .header-inner {
     width: 90%;
-}
+  }
+
+  .popular {
+    margin-left: 110%;
+    margin-top: -11vw;
+  }
 }
 @media (max-width: 400px) {
   .product-widget {
