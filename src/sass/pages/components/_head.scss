@@ -3,13 +3,15 @@
 .header {
   height: 100vh;
   position: relative;
-  background: linear-gradient(transparent, $third-colour),url(../../images/background.png);
+  background: linear-gradient(transparent, $third-colour),
+    url(../../images/background.png);
   background-position: center center;
   background-size: cover;
   font-family: $font-text;
   display: flex;
 
-  h2, p {
+  h2,
+  p {
     color: $first-colour;
     margin: 0 15%;
   }
@@ -18,10 +20,10 @@
     font-size: 4vw;
     letter-spacing: 6px;
     font-weight: $font-semibold;
-    padding-top: $base-size *2;
+    padding-top: $base-size * 2;
   }
 
-  p{
+  p {
     letter-spacing: 2px;
     font-weight: $font-normal;
     font-size: 2vw;
@@ -29,7 +31,6 @@
 }
 
 .main-nav {
-  margin: 0 15%;
   display: inline;
   display: flex;
   justify-content: right;
@@ -45,7 +46,7 @@
 
 .header-inner {
   position: absolute;
-  width: 100%;
+  width: 90%;
 }
 
 .navi {
@@ -61,7 +62,8 @@
   justify-content: center;
 }
 
-.page-title, .page-title-two {
+.page-title,
+.page-title-two {
   color: $second-colour;
   font-size: 5vw;
   font-family: $font-text;
@@ -70,13 +72,13 @@
   transform: translate(10vw, 10vw);
 }
 
-.page-title-two{
+.page-title-two {
   padding-left: 8%;
 }
 
 .page-title::after {
   position: absolute;
-  content: '';
+  content: "";
   bottom: -8vw;
   left: 32vw;
   width: 15vw;

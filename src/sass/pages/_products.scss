@@ -45,13 +45,14 @@
     font-size: 3.8vw;
     margin-bottom: 10px;
     position: relative;
+    font-family: $font-text;
   }
 
   .name::after {
     position: absolute;
     content: "";
     bottom: -2px;
-    width: 100px;
+    width: 10vw;
     height: 3px;
     background: $second-colour;
     display: flex;
